@@ -107,9 +107,9 @@ public class JSONTokener {
    }
 
    public boolean matches( String pattern ) {
-      String str = this.mySource.substring( this.myIndex );
+      CharSequence seq = new CharSequenceO1(this.mySource, this.myIndex);
       return RegexpUtils.getMatcher( pattern )
-            .matches( str );
+            .matches( seq );
    }
 
    /**

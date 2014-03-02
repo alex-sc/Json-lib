@@ -60,4 +60,8 @@ public class Perl5RegexpMatcher implements RegexpMatcher {
    public boolean matches( String str ) {
       return new Perl5Matcher().matches( str, pattern );
    }
+
+   public boolean matches(CharSequence str) {
+      return new Perl5Matcher().matches( str.toString(), pattern );
+   }
 }

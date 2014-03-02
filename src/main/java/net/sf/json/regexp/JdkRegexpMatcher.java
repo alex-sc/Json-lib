@@ -50,4 +50,8 @@ public class JdkRegexpMatcher implements RegexpMatcher {
    public boolean matches( String str ) {
       return pattern.matcher( str ).matches();
    }
+
+   public boolean matches( CharSequence str ) {
+      return pattern.matcher( str ).matches();
+   }
 }

@@ -35,4 +35,6 @@ public interface RegexpMatcher {
     * implementation.
     */
    boolean matches( String str );
+
+   boolean matches( CharSequence str );
 }
